@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title">Rock Paper Scissors</h1>
+    <div class="container">
+        <div class="game-btn rock-btn" value="0">
+            <img id="rock-img" src="rock.png" alt="rock">
+        </div>
+        <div class="game-btn paper-btn" value="1">
+            <img id="paper" src="paper.png" alt="paper">
+        </div>
+        <div class="game-btn scissor-btn" value="2">
+            <img id="scissor" src="scissors.png" alt="scissor">
+        </div>
+    </div>
+
+    <div class="score winner-msg hide">
+        <p>Winner is: </p>
+        <p id="win-msg">0</p>
+    </div>
+
+    <div class="reset hide">
+        <button id="reset-btn">Reset</button>
+    </div>
+
+    <div class="second-container">
+        <div class="score player1Score">
+            <p>Player score: </p>
+            <p id="player-msg">0</p>
+        </div>
+        <div class="score player2Score">
+            <p>Computer score: </p>
+            <p id="comp-msg">0</p>
+        </div>
+        <div class="score draw">
+            <p>Draw: </p>
+            <p id="draw-msg">0</p>
+        </div>
+        <div class="choice">
+            <p>Your choice: </p>
+            <p id="player-choice">None</p>
+        </div>
+        <div class="choice">
+            <p>Computer's choice: </p>
+            <p id="comp-choice">None</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
